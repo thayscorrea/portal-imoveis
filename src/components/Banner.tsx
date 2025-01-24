@@ -17,11 +17,11 @@ const Banner = () => {
 
     return (
         <div className="relative bg-cover md:bg-center h-[15vh] md:h-[600px]" style={{ backgroundImage: "url('/img-moca.png')" }}>
-            <div className="flex flex-col absolute inset-0 bg-black bg-opacity-40 justify-center items-center">
+            <div className="block md:flex md:flex-col absolute inset-0 bg-black bg-opacity-40 justify-center items-center">
                 <h1 className="text-white text-xl mt-2 md:text-3xl font-bold mb-6 w-[130px] md:w-[500px]">Vende. Aluga. Conecta.</h1>
 
                 {/* Desktop Form */}
-                <div className="hidden md:flex bg-white shadow-md rounded-full overflow-hidden max-w-4xl w-full cursor-pointer">
+                <div className="grid md:flex bg-white shadow-md md:rounded-full md:overflow-hidden max-w-4xl w-full cursor-pointer mb-12 md:mb-0">
                     <LocationInput text='Localização' placeholder='Qual é a Localização?' isLocation={true} setIsFocused={setIsFocused} location={location} setLocation={setLocation} />
 
                     <LocationInput text='Nº de Quartos' placeholder='Quantos Quartos?' isLocation={false} setIsFocused={setIsFocused} location={location} setLocation={setLocation}  />

@@ -71,7 +71,7 @@ const PropertyList = () => {
     };
 
     return (
-        <div className="container mx-auto p-4">
+        <div className="container mx-auto p-4 mt-16 mb-16">
             <h2 className="text-xl font-bold mb-4">
                 Novos Anúncios em
                 <select
