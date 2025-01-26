@@ -109,10 +109,7 @@ const PropertyList = () => {
             {selectedCity && flats.length > 0 ? (
                 <div className="relative">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-                        {flats.slice(currentIndex, currentIndex + (window.innerWidth >= 768 ? 4 : 1)).map((flat, index) => 
-                        {
-                         console.log(flat);
-                        return(
+                        {flats.slice(currentIndex, currentIndex + (window.innerWidth >= 768 ? 4 : 1)).map((flat, index) => (
                             <div
                                 key={index}
                                 className="border rounded-lg shadow-md overflow-hidden"
@@ -144,7 +141,7 @@ const PropertyList = () => {
                                     </p>
                                 </div>
                             </div>
-                        )})}
+                        ))}
                     </div>
                 </div>
             ) : selectedCity ? (

@@ -4,6 +4,9 @@ import PropertyList from "@/components/PropertyList";
 import TextBlock from "@/components/TextBlock";
 import ImageBlock from "@/components/ImageBlock";
 import PromoteProperty from "@/components/PromoteProperty";
+import CitiesCarousel from "@/components/CitiesCarousel";
+import CTA from "@/components/CTA";
+import CozySpotSection from "@/components/CozySpotSection";
 
 export default function Home() {
   return (
@@ -15,6 +18,9 @@ export default function Home() {
         <TextBlock />
         <ImageBlock />
         <PromoteProperty />
+        <CitiesCarousel />
+        <CTA />
+        <CozySpotSection />
       </main>
     </>
   );
