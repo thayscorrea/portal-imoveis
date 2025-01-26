@@ -47,37 +47,38 @@ const TabsBlock: React.FC<TabsBlockProps> = ({ data, currentTab, setCurrentTab }
     };
 
     return (
-        <div className="bg-white p-6 rounded md:w-2/5">
+        <div className="bg-white p-6 rounded md:w-2/5 h-3/5">
             {/* Tabs */}
-
-            <div className="md:space-x-4 mb-6 grid grid-cols-1 md:grid-cols-4 gap-2">
+            <div className="flex">
                 <button
                     onClick={prevSlide}
                     disabled={currentIndex === 0}
-                    className="disabled:hidden mr-4 "
+                    className="disabled:hidden mr-4 mb-6"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" color="#000000" fill="none">
                         <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                 </button>
-                
-                {data.buttons.slice(currentIndex, currentIndex + (window.innerWidth >= 768 ? 3 : 1)).map(({ title, value }, key) => (
-                    <button
-                        key={key}
-                        className={`font-semibold rounded text-black focus:outline-none ${currentTab === value
-                            ? "border-b-2 border-orange-500"
-                            : "bg-white text-gray-700 border-none"
-                            }`}
-                        onClick={() => setCurrentTab(value)}
-                    >
-                        {title}
-                    </button>
-                ))}
+
+                <div className="md:space-x-4 mb-6 grid grid-cols-1 md:grid-cols-3 gap-2">
+                    {data.buttons.slice(currentIndex, currentIndex + (window.innerWidth >= 768 ? 3 : 1)).map(({ title, value }, key) => (
+                        <button
+                            key={key}
+                            className={`font-semibold rounded text-black focus:outline-none ${currentTab === value
+                                ? "border-b-2 border-orange-500"
+                                : "bg-white text-gray-700 border-none"
+                                }`}
+                            onClick={() => setCurrentTab(value)}
+                        >
+                            {title}
+                        </button>
+                    ))}
+                </div>
 
                 <button
                     onClick={nextSlide}
                     disabled={currentIndex >= data.buttons.length - 3}
-                    className="disabled:hidden"
+                    className="disabled:hidden mb-6"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" color="#000000" fill="none">
                         <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -86,12 +87,12 @@ const TabsBlock: React.FC<TabsBlockProps> = ({ data, currentTab, setCurrentTab }
             </div>
 
             {/* Dynamic Content */}
-            <div className="flex justify-end mb-4 p-4">
+            <div className="flex mb-4 p-4">
                 {data.tabs.map(({ value, title, subtitle, button, links }, index) => {
                     if (currentTab === value) {
                         return (
                             <div key={value}> {/* Use uma key única, como o valor de 'value' */}
-                                <h2 className="text-xl font-bold mb-2">{title}</h2>
+                                <h2 className="text-2xl font-bold mb-3">{title}</h2>
                                 <p className="text-gray-600 mb-4">{subtitle}</p>
                                 <button className="border border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white py-2 px-4 rounded mb-6">
                                     {button.title}

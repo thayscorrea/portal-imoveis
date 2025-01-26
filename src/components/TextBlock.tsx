@@ -80,7 +80,7 @@ export default function TextBlock() {
 
     return (
         <div className="bg-gray-100 pt-12 pb-12">
-            <div className="block md:flex container p-8 mx-auto ">
+            <div className="block md:flex mx-40 p-8">
                 <div className="md:w-2/5">
                     <h1 className="text-2xl md:text-5xl font-bol text-gray-600 mb-4">Encontre um lugar que é a sua cara</h1>
                     <p className="text-gray-500 mb-6">

@@ -93,8 +93,8 @@ const ImageBlock = () => {
     }
 
     return (
-        <div className="relative bg-cover md:bg-center h-[15vh] md:h-[600px]" style={{ backgroundImage: `url(${'/' + currentTab + '.png'})` }}>
-            <div className="w-3/5 block md:flex md:flex-col absolute inset-0 justify-center items-center">
+        <div className="relative bg-cover md:bg-center h-[15vh] md:h-[600px] " style={{ backgroundImage: `url(${'/' + currentTab + '.png'})` }}>
+            <div className="mx-48 block md:flex md:flex-col absolute inset-0 justify-center">
                 <TabsBlock data={data} currentTab={currentTab} setCurrentTab={setCurrentTab} />
             </div>
         </div>

@@ -9,7 +9,8 @@
       "furniture",
       "parking"
     ],
-    "Price": 900000
+    "Price": 900000,
+    "Image": "/casa1.png"
   },
   {
     "City": "Fortaleza",
@@ -20,7 +21,8 @@
       "elevator",
       "furniture"
     ],
-    "Price": 300000
+    "Price": 300000,
+    "Image": "/casa2.png"
   },
   {
     "City": "Fortaleza",
@@ -31,7 +33,8 @@
       "furniture",
       "parking"
     ],
-    "Price": 550000
+    "Price": 550000,
+    "Image": "/casa3.png"
   },
   {
     "City": "Fortaleza",
@@ -43,7 +46,8 @@
       "furniture",
       "parking"
     ],
-    "Price": 700000
+    "Price": 700000,
+    "Image": "/casa2.png"
   },
   {
     "City": "Fortaleza",
@@ -55,7 +59,8 @@
       "furniture",
       "parking"
     ],
-    "Price": 500000
+    "Price": 500000,
+    "Image": ""
   },
   {
     "City": "Fortaleza",
@@ -66,7 +71,8 @@
       "furniture",
       "parking"
     ],
-    "Price": 400000
+    "Price": 400000,
+    "Image": ""
   },
   {
     "City": "Belo Horizonte",
@@ -78,7 +84,8 @@
       "furniture",
       "parking"
     ],
-    "Price": 1200000
+    "Price": 1200000,
+    "Image": "/casa1.png"
   },
   {
     "City": "Belo Horizonte",
@@ -89,7 +96,8 @@
       "furniture",
       "parking"
     ],
-    "Price": 400000
+    "Price": 400000,
+    "Image": "/casa2.png"
   },
   {
     "City": "Belo Horizonte",
@@ -100,7 +108,8 @@
       "elevator",
       "furniture"
     ],
-    "Price": 600000
+    "Price": 600000,
+    "Image": "/casa3.png"
   },
   {
     "City": "Belo Horizonte",
@@ -111,7 +120,8 @@
       "elevator",
       "parking"
     ],
-    "Price": 900000
+    "Price": 900000,
+    "Image": "/casa2.png"
   },
   {
     "City": "Belo Horizonte",
@@ -122,7 +132,8 @@
       "elevator",
       "parking"
     ],
-    "Price": 550000
+    "Price": 550000,
+    "Image": ""
   },
   {
     "City": "Belo Horizonte",
@@ -133,7 +144,8 @@
       "furniture",
       "parking"
     ],
-    "Price": 700000
+    "Price": 700000,
+    "Image": ""
   },
   {
     "City": "São Paulo",
@@ -145,7 +157,8 @@
       "furniture",
       "parking"
     ],
-    "Price": 1100000
+    "Price": 1100000,
+    "Image": "/casa1.png"
   },
   {
     "City": "São Paulo",
@@ -155,7 +168,8 @@
     "Tags": [
       "furniture"
     ],
-    "Price": 350000
+    "Price": 350000,
+    "Image": "/casa2.png"
   },
   {
     "City": "São Paulo",
@@ -167,7 +181,8 @@
       "furniture",
       "parking"
     ],
-    "Price": 650000
+    "Price": 650000,
+    "Image": "/casa3.png"
   },
   {
     "City": "São Paulo",
@@ -178,7 +193,8 @@
       "elevator",
       "parking"
     ],
-    "Price": 850000
+    "Price": 850000,
+    "Image": "/casa2.png"
   },
   {
     "City": "São Paulo",
@@ -189,7 +205,8 @@
       "furniture",
       "parking"
     ],
-    "Price": 500000
+    "Price": 500000,
+    "Image": ""
   },
   {
     "City": "São Paulo",
@@ -200,7 +217,8 @@
       "elevator",
       "furniture"
     ],
-    "Price": 700000
+    "Price": 700000,
+    "Image": ""
   }
 ]
 

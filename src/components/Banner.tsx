@@ -17,7 +17,7 @@ const Banner = () => {
 
     return (
         <div className="relative bg-cover md:bg-center h-[15vh] md:h-[600px]" style={{ backgroundImage: "url('/img-moca.png')" }}>
-            <div className="block md:flex md:flex-col absolute inset-0 bg-black bg-opacity-40 justify-center items-center">
+            <div className="block md:flex md:flex-col absolute inset-0 justify-center items-center">
                 <h1 className="text-white text-xl mt-2 md:text-3xl font-bold mb-6 w-[130px] md:w-[500px]">Vende. Aluga. Conecta.</h1>
 
                 {/* Desktop Form */}

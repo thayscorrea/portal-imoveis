@@ -9,7 +9,7 @@ interface Property {
     Rooms: number;
     Tags: string[];
     Price: number;
-    Image?: string; // Opcional
+    Image?: string;
 }
 
 interface Place {
@@ -71,7 +71,7 @@ const PropertyList = () => {
     };
 
     return (
-        <div className="container mx-auto p-4 mt-16 mb-16">
+        <div className="mx-40 p-4 mt-16 mb-16">
             <h2 className="text-xl font-bold mb-4">
                 Novos Anúncios em
                 <select
@@ -108,8 +108,11 @@ const PropertyList = () => {
             </div>
             {selectedCity && flats.length > 0 ? (
                 <div className="relative">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        {flats.slice(currentIndex, currentIndex + (window.innerWidth >= 768 ? 3 : 1)).map((flat, index) => (
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                        {flats.slice(currentIndex, currentIndex + (window.innerWidth >= 768 ? 4 : 1)).map((flat, index) => 
+                        {
+                         console.log(flat);
+                        return(
                             <div
                                 key={index}
                                 className="border rounded-lg shadow-md overflow-hidden"
@@ -117,7 +120,7 @@ const PropertyList = () => {
                                 <div
                                     className="relative bg-cover bg-center h-[200px]"
                                     style={{
-                                        backgroundImage: `url('${flat.Image || "/default.png"}')`,
+                                        backgroundImage: `url('${flat.Image && flat.Image.trim() !== "" ? flat.Image : "/casa1.png"}')`, // Verificação robusta para flat.Image
                                     }}
                                 ></div>
                                 <div className="p-4">
@@ -141,7 +144,7 @@ const PropertyList = () => {
                                     </p>
                                 </div>
                             </div>
-                        ))}
+                        )})}
                     </div>
                 </div>
             ) : selectedCity ? (
