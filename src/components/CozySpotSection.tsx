@@ -4,7 +4,7 @@ import React from "react";
 
 const CozySpotSection = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center bg-gray-50 rounded-lg shadow-lg">
+    <div className="flex flex-col md:flex-row items-center bg-gray-50 rounded-lg mt-24 mb-24">
       {/* Left Section */}
       <div className="w-full md:w-1/2">
           <img

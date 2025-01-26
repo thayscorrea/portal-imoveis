@@ -7,6 +7,7 @@ import PromoteProperty from "@/components/PromoteProperty";
 import CitiesCarousel from "@/components/CitiesCarousel";
 import CTA from "@/components/CTA";
 import CozySpotSection from "@/components/CozySpotSection";
+import BlogSection from "@/components/BlogSection";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <CitiesCarousel />
         <CTA />
         <CozySpotSection />
+        <BlogSection />
       </main>
     </>
   );
