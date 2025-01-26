@@ -4,7 +4,7 @@ import React from "react";
 
 const CTAJoinNetimoveis = () => {
   return (
-    <div className="mx-40 bg-[#1C2A39] text-white rounded-lg shadow-2xl flex flex-col md:flex-row items-center md:pl-12 md:mt-12 md:mb-16">
+    <div className="md:mx-40 pt-8 pl-8 pr-8 md:p-0 bg-[#1C2A39] text-white rounded-lg shadow-2xl flex flex-col md:flex-row items-center md:pl-12 md:mt-12 md:mb-16">
       {/* Left Section */}
       <div className="w-full md:w-1/2">
         <span className="text-white font-medium text-sm inline-block mb-4 border border-orange-500 rounded-full px-3 py-1">

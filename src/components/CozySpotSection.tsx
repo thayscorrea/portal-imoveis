@@ -14,7 +14,7 @@ const CozySpotSection = () => {
       </div>
 
       {/* Right Section */}
-      <div className="w-full md:w-1/3 mt-8 md:mt-0 md:ml-24">
+      <div className="w-full md:w-1/3 mt-8 ml-12 md:mt-0 md:ml-24">
         <h3 className="text-lg font-semibold text-gray-500 p-6">
           Aqui vai uma frase de efeito
         </h3>

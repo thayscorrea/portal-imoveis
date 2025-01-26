@@ -80,9 +80,9 @@ export default function TextBlock() {
 
     return (
         <div className="bg-gray-100 pt-12 pb-12">
-            <div className="block md:flex mx-40 p-8">
+            <div className="block md:flex md:mx-40 p-8">
                 <div className="md:w-2/5">
-                    <h1 className="text-2xl md:text-5xl font-bol text-gray-600 mb-4">Encontre um lugar que é a sua cara</h1>
+                    <h1 className="text-3xl md:text-5xl font-bold text-gray-700 md:text-gray-600 mb-4">Encontre um lugar que é a sua cara</h1>
                     <p className="text-gray-500 mb-6">
                         A Netimóveis te oferece uma experiência ágil e segura na hora de comprar ou alugar seu imóvel.
                         Seja de maneira digital ou física, fazemos a diferença neste momento tão importante que é decidir um lar.

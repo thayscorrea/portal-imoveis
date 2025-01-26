@@ -2,8 +2,11 @@
 
 import React, { useState } from "react";
 
+import useDeviceSize from '../hooks/useDeviceSize'
+
 const CitiesCarousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0); // Índice atual do carrossel
+    const [width, height] = useDeviceSize();
 
     const places = [
         {
@@ -38,10 +41,10 @@ const CitiesCarousel = () => {
     };
 
     return (
-        <div className="mx-40 p-4 mt-24 mb-16">
+        <div className="md:mx-40 p-4 mt-24 mb-16">
 
-            <div className="flex justify-between mb-4">
-                <h2 className="text-2xl font-bold mb-4">
+            <div className="flex md:justify-between mb-4">
+                <h2 className="w-2/3 text-lg md:text-2xl font-bold mb-4">
                     Prontos pra te Receber em mais de 10 estados
                 </h2>
                 <div>
@@ -68,14 +71,14 @@ const CitiesCarousel = () => {
 
             <div className="relative">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-                    {places.slice(currentIndex, currentIndex + (window.innerWidth >= 768 ? 4 : 1)).map((state, index) => {
+                    {places.slice(currentIndex, currentIndex + (width >= 768 ? 4 : 1)).map((state, index) => {
                         return (
                             <div
                                 key={index}
                                 className=""
                             >
                                 <div
-                                    className="rounded-lg bg-cover bg-center h-[170px]"
+                                    className="rounded-lg bg-cover bg-center h-[230px] md:h-[170px]"
                                     style={{
                                         backgroundImage: `url('${state.Image && state.Image.trim() !== "" ? state.Image : "/casa1.png"}')`, // Verificação robusta para state.Image
                                     }}

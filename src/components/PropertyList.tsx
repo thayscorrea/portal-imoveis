@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import useDeviceSize from '../hooks/useDeviceSize'
 
 interface Property {
     City: string;
@@ -23,6 +24,7 @@ const PropertyList = () => {
     const [flats, setFlats] = useState<Property[]>([]); // Lista de flats
     const [selectedCity, setSelectedCity] = useState("Belo Horizonte"); // Cidade selecionada
     const [currentIndex, setCurrentIndex] = useState(0); // Índice atual do carrossel
+    const [width, height] = useDeviceSize();
 
     // Carregar cidades do arquivo places.json
     useEffect(() => {
@@ -71,7 +73,7 @@ const PropertyList = () => {
     };
 
     return (
-        <div className="mx-40 p-4 mt-16 mb-16">
+        <div className="md:mx-40 p-4 mt-48 md:mt-16 md:mb-16">
             <h2 className="text-xl font-bold mb-4">
                 Novos Anúncios em
                 <select
@@ -109,7 +111,7 @@ const PropertyList = () => {
             {selectedCity && flats.length > 0 ? (
                 <div className="relative">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-                        {flats.slice(currentIndex, currentIndex + (window.innerWidth >= 768 ? 4 : 1)).map((flat, index) => (
+                        {flats.slice(currentIndex, currentIndex + (width >= 768 ? 4 : 1)).map((flat, index) => (
                             <div
                                 key={index}
                                 className="border rounded-lg shadow-md overflow-hidden"

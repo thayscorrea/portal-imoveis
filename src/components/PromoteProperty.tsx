@@ -1,23 +1,29 @@
 "use client";
 
 import React from "react";
+import useDeviceSize from '../hooks/useDeviceSize'
 
 const PromoteProperty = () => {
+
+  const [width, height] = useDeviceSize();
+
   return (
-    <div className="mx-40 mt-16 mb-16 flex flex-col md:flex-row bg-white border rounded-2xl">
+    <div className="md:mx-40 mt-16 mb-16 flex flex-col md:flex-row bg-white border rounded-2xl">
 
       {/* Left Section: Image */}
-      <div className="w-3/5 h-full">
-        <img
-          src="/casal.png"
-          alt="Anuncie grátis"
-          className="rounded-2xl"
-        />
-      </div>
+      {width >= 768 &&
+        <div className="md:block w-3/5 h-full">
+          <img
+            src="/casal.png"
+            alt="Anuncie grátis"
+            className="rounded-2xl"
+          />
+        </div>
+      }
 
-      <div className="w-2/5 items-center">
+      <div className="md:w-2/5 items-center">
         {/* Right Section: Content */}
-        <div className="mt-6 md:mt-0 md:ml-10 text-center md:text-left">
+        <div className="mt-6 md:mt-0 ml-10 text-left">
           <p className="text-orange-500 font-bold mb-2 mt-6">Quer Vender ou Alugar?</p>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mr-12 pb-8">
             Anuncie grátis para mais de 100 mil pessoas todos os dias.
@@ -30,6 +36,15 @@ const PromoteProperty = () => {
           </p>
         </div>
       </div>
+
+      {width < 768 &&
+        <img
+          src="/casal.png"
+          alt="Anuncie grátis"
+          className="mt-8"
+        />
+      }
+
     </div>
   );
 };

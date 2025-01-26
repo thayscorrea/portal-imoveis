@@ -60,8 +60,8 @@ const TabsBlock: React.FC<TabsBlockProps> = ({ data, currentTab, setCurrentTab }
                     </svg>
                 </button>
 
-                <div className="md:space-x-4 mb-6 grid grid-cols-1 md:grid-cols-3 gap-2">
-                    {data.buttons.slice(currentIndex, currentIndex + (window.innerWidth >= 768 ? 3 : 1)).map(({ title, value }, key) => (
+                <div className="grid space-x-4 mb-6 grid-cols-3 gap-2">
+                    {data.buttons.slice(currentIndex, currentIndex + (3)).map(({ title, value }, key) => (
                         <button
                             key={key}
                             className={`font-semibold rounded text-black focus:outline-none ${currentTab === value
@@ -87,7 +87,7 @@ const TabsBlock: React.FC<TabsBlockProps> = ({ data, currentTab, setCurrentTab }
             </div>
 
             {/* Dynamic Content */}
-            <div className="flex mb-4 p-4">
+            <div className="md:flex mb-4 p-4">
                 {data.tabs.map(({ value, title, subtitle, button, links }, index) => {
                     if (currentTab === value) {
                         return (

@@ -3,9 +3,11 @@
 import { useState } from "react";
 
 import TabsBlock from "./TabsBlock";
+import useDeviceSize from '../hooks/useDeviceSize'
 
 const ImageBlock = () => {
     const [currentTab, setCurrentTab] = useState("sol");
+    const [width, height] = useDeviceSize();
 
     const data = {
         buttons: [
@@ -93,11 +95,13 @@ const ImageBlock = () => {
     }
 
     return (
-        <div className="relative bg-cover md:bg-center h-[15vh] md:h-[600px] " style={{ backgroundImage: `url(${'/banner/' + currentTab + '.png'})` }}>
-            <div className="mx-48 block md:flex md:flex-col absolute inset-0 justify-center">
+
+        <div className="mb-96 md:mb-0 relative bg-cover bg-center md:h-[600px] " style={{ backgroundImage: `url(${'/banner/' + currentTab + '.png'})` }}>
+            <div className="md:mx-48 block md:flex md:flex-col absolute inset-0 justify-center">
                 <TabsBlock data={data} currentTab={currentTab} setCurrentTab={setCurrentTab} />
             </div>
         </div>
+
     );
 };
 

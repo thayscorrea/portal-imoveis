@@ -26,8 +26,8 @@ const BlogSection = () => {
     ];
 
     return (
-        <div className="mx-40 py-12 px-6">
-            <div className="flex justify-between items-center mb-6">
+        <div className="md:mx-40 py-12 px-6">
+            <div className="grid md:flex justify-between items-center mb-6">
                 <h2 className="text-2xl font-bold text-gray-800">
                     Para compradores, vendedores ou curiosos :)
                 </h2>
