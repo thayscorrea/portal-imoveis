@@ -8,6 +8,8 @@ import CitiesCarousel from "@/components/CitiesCarousel";
 import CTA from "@/components/CTA";
 import CozySpotSection from "@/components/CozySpotSection";
 import BlogSection from "@/components/BlogSection";
+import CTAJoinNetimoveis from "@/components/CTAJoinNetimoveis";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -23,6 +25,8 @@ export default function Home() {
         <CTA />
         <CozySpotSection />
         <BlogSection />
+        <CTAJoinNetimoveis />
+        <Footer />
       </main>
     </>
   );
