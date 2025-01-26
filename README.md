@@ -6,6 +6,7 @@ Projeto para gerencia de imóveis.
 ## Linguagem, Framework e Tecnologias
 - NextTs
 - Tailwind CSS
+- Design disponível em: https://www.figma.com/design/Bbwa2wakxxcUMZB4Y4nXke/Teste-Coodesh?node-id=1-215&t=c3Jux5xINYhJMMv0-0
 
 
 # Instalação
